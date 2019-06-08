@@ -47,6 +47,7 @@ public class OozieRestfulTestDemo {
     public static void main(String[] args){
 //        getWorkflowInfo("0000004-180627220033949-oozie-root-W");
 //        getWorkflowXML("0000004-180627220033949-oozie-root-W");
+        //注意需要开启hadoop的jobhistory进程10020
         submitWorkflow();
     }
 

@@ -26,6 +26,9 @@ public class OozieClientTestDemo {
     }
 
     private static void submitJob() throws OozieClientException, InterruptedException {
+
+        //注意需要开启hadoop的jobhistory进程10020
+
         OozieClient wc =new OozieClient("http://ubuntu2:11000/oozie/");
         try {
             System.out.println(UserGroupInformation.getLoginUser());
